@@ -55,7 +55,7 @@ function Items({ done: doneHeading, onPressItem, onPressDelete }) {
         <TouchableOpacity
           key={id}
           style={{
-            backgroundColor: done ? "#fff" : "#fff",
+            backgroundColor: done ? "#000" : "#000",
             borderColor: "#000",
             borderWidth: 1,
             padding: 8,
@@ -71,7 +71,7 @@ function Items({ done: doneHeading, onPressItem, onPressDelete }) {
               onPress={() => onPressDelete && onPressDelete(id)}
             ></Button>
           ) : null}
-          <Text style={{ color: done ? "#000" : "#fff" }}>{value}</Text>
+          <Text style={{ color: done ? "#fff" : "#fff" }}>{value}</Text>
         </TouchableOpacity>
       ))}
     </View>
